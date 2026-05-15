@@ -145,3 +145,20 @@ TEXT = {
         "marketplace_csv_files": "按平台下载 CSV：",
     },
 }
+
+TEXT["ru"].update(
+    {
+        "api_sync_data": "\u0421\u0438\u043d\u0445\u0440\u043e\u043d\u0438\u0437\u0430\u0446\u0438\u044f \u0447\u0435\u0440\u0435\u0437 API (\u043f\u043e\u043a\u0430 \u043d\u0435 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0435\u0442\u0441\u044f)",
+        "api_sync_unavailable": (
+            "\u042d\u0442\u043e\u0442 \u0432\u0445\u043e\u0434 \u0437\u0430\u0440\u0435\u0437\u0435\u0440\u0432\u0438\u0440\u043e\u0432\u0430\u043d \u0434\u043b\u044f \u0431\u0443\u0434\u0443\u0449\u0435\u0439 \u0441\u0438\u043d\u0445\u0440\u043e\u043d\u0438\u0437\u0430\u0446\u0438\u0438 \u0447\u0435\u0440\u0435\u0437 API-token Ozon / Wildberries / Yandex Market."
+        ),
+    }
+)
+TEXT["zh"].update(
+    {
+        "api_sync_data": "\u5b98\u65b9 API \u81ea\u52a8\u540c\u6b65\uff08\u6682\u4e0d\u652f\u6301\uff09",
+        "api_sync_unavailable": (
+            "\u8be5\u5165\u53e3\u9884\u7559\u7ed9\u540e\u7eed Ozon / Wildberries / Yandex Market API token \u540c\u6b65\u529f\u80fd\u3002"
+        ),
+    }
+)

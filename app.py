@@ -117,9 +117,12 @@ def main():
         lang = st.session_state["lang"]
 
         st.header(tr("data"))
+        default_data_label = tr("default_data")
+        upload_data_label = tr("upload_data")
+        api_sync_label = tr("api_sync_data")
         data_source = st.radio(
             tr("data"),
-            [tr("default_data"), tr("upload_data")],
+            [default_data_label, upload_data_label, api_sync_label],
             label_visibility="collapsed",
         )
         uploaded = (
@@ -128,11 +131,13 @@ def main():
                 type=["csv"],
                 help=tr("upload_help"),
             )
-            if data_source == tr("upload_data")
+            if data_source == upload_data_label
             else None
         )
-        if data_source == tr("upload_data") and uploaded is None:
+        if data_source == upload_data_label and uploaded is None:
             st.info(tr("upload_missing"))
+        if data_source == api_sync_label:
+            st.info(tr("api_sync_unavailable"))
 
     try:
         df = load_data(uploaded)
